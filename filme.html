@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glitch.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="shortcut icon" href="midias/icon.png" type="image/x-icon">
+</head>
+
+<header>
+    <nav> 
+        <div class="shake"><a href="quiz.html" id="glitch">Quiz</div></a>
+        <div class="shake"><a href="jogos.html" id="glitch">Jogos</div></a>
+        <div class="shake"><a href="index.html" id="glitch">Home</div></a>
+        <div class="shake"><a href="filme.html" id="active">Filme</div></a>
+        <div class="shake"><a href="loja.html" id="glitch">Loja!</div></a>
+    </nav>
+</header>
+
+<body onload="iniciar()">
+    <div id="topo">
+        <video autoplay loop id="trailer">
+            <source src="midias/five-nights_trailer.mp4" type="video/mp4">
+        </video>
+        <div class="dentro">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <img src="midias/Five_Nights_at_Freddy's_Movie_Logo.png" width="350px"><br>
+            <button id="pause" onclick="pausar()"><i class="fa fa-pause"></i></button>
+            <div class="volume-chooser">
+                <div class="volume-control">
+                    <input class="volume" type="range" value="100" max="100">
+                </div>
+                <button id="mute" onclick="mutar()"><i class="fa fa-volume-off"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="cont" style="padding-top: 0px;">
+        <img src="midias/poster.jpg" width="30%" style="float: right; padding-left: 20px;">
+        <h1>Sinopse</h1>
+        <p style="text-align: justify;">Five Nights At Freddy's - O Pesadelo Sem Fim é a primeira adaptação cinematográfica da famosa franquia 
+            homônima de jogos lançada em 2014 e criada por Scott Cawthon. Dirigido por Emma Tammi (Terra Assombrada, Fair Chase), 
+            a história se passa em um restaurante familiar tipicamente americano chamado Freddy Fazbear's Pizza, que está 
+            atualmente desativado, e acompanha Mike Schmidt (Josh Hutcherson), um jovem que está passando por alguns problemas 
+            financeiros. Felizmente, ele vê a resposta para seus problemas ao ser contratado para trabalhar como o vigia noturno da 
+            pizzaria. Criado por Henry Emily e William Afton, o lugar costumava ser muito famoso por seus característicos robôs 
+            animados, que eram o rosto do local e faziam a festa das crianças durante o dia. Porém, quando o sol se põe e a 
+            escuridão da noite chega, um segredo obscuro e mortal é revelado: os bonecos animatrônicos ganham vida, transformando-se 
+            em assassinos psicopatas e partindo em uma violenta matança.
+        </p>
+
+        <h3>Elenco</h3>
+        <ul>
+            <li>Josh Hutcherson</li>
+            <li>Matthew Lillard</li> 
+            <li>Elizabeth Lail</li> 
+        </ul>
+
+        <h3>Direção</h3>
+        <p>Direção: Emma Tammi</p>
+
+        <h3>Gênero</h3>
+        <p>Terror</p>
+
+        <h3>Duração</h3>
+        <p>109 min.</p>
+
+        <h3>Distribuidora</h3>
+        <p>Universal Pictures</p>
+
+        <h3>Orçamento</h3>
+        <p>US$ 20 milhões</p>
+
+        <h3>Estreia</h3>
+        <p>26 de Outubro de 2023</p>
+
+        <h1>Trailer oficial do Youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/akJMKqpfUww?si=yqX2tXP_dCH23Joq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h1 style="color: #E100FF;">Pôsteres do filme</h1>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="midias/baner1.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner2.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner3.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner4.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner5.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner1.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner2.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner3.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner4.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner5.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner1.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner2.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner3.jpg" height="100%" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="midias/baner4.jpg" height="100%" width="250" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    © 2023 Scott Cawthon. ALL RIGHTS RESERVED.<br><br>
+    <img src="midias/scott.webp" height="50px"> &nbsp <img src="midias/universal.png" height="50px"> &nbsp <img src="midias/thronus.png" height="50px"><br><br>
+    Desenvolvido por Rafael Santos Rodrigues & Raul Ribeiro Fialho
+</footer>
+
+</html>
+<script src="script.js"></script>

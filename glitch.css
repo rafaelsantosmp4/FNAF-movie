@@ -1,0 +1,59 @@
+@keyframes glitch {
+    0% {
+        color: #fff; 
+        text-shadow: 0 0 10px #ea00ff, 0 0 20px #ea00ff, 0 0 30px #ea00ff,
+        0 0 40px #ea00ff, 0 0 50px #ea00ff, 0 0 60px #ea00ff, 0 0 70px #ea00ff;
+    }
+    10% {
+        color: #fff; 
+        text-shadow: none;
+    }
+    20% {
+        color: #fff; 
+        text-shadow: 0 0 10px #ff8800, 0 0 20px #ff8800, 0 0 30px #ff8800,
+        0 0 40px #ff8800, 0 0 50px #ff8800, 0 0 60px #ff8800, 0 0 70px #ff8800;
+    }
+    30% {
+        color: #fff; 
+        text-shadow: none;
+    }
+    40% {
+        color: #fff; 
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+        0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+    50% {
+        color: #fff; 
+        text-shadow: none;
+    }
+    60% {
+        color: #fff; 
+        text-shadow: 0 0 10px #008cff, 0 0 20px #008cff, 0 0 30px #008cff,
+        0 0 40px #008cff, 0 0 50px #008cff, 0 0 60px #008cff, 0 0 70px #008cff;
+    }
+}
+#glitch {
+    color: #fff;
+    transition: color 0.9s ease-in-out;
+    transition: 300ms;
+}  
+#glitch:hover {
+    animation: glitch 1s infinite linear; 
+}
+.shake:hover {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
